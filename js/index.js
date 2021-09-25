@@ -110,7 +110,7 @@ function websdkready() {
           console.log(res.result);
           meetingConfig.signature = res.result;
           meetingConfig.apiKey = API_KEY;
-          var joinUrl = "/FATIH/is/20211231_PETRA/webseite/zoom%20einbetten/meeting.html?" + testTool.serialize(meetingConfig);
+          var joinUrl = "/https://hfsonmez.github.io/wixhtmlpages/meeting.html?" + testTool.serialize(meetingConfig);
           console.log(joinUrl);
           window.open(joinUrl, "_blank");
         },
@@ -144,7 +144,7 @@ function websdkready() {
         meetingConfig.apiKey = API_KEY;
         var joinUrl =
           testTool.getCurrentDomain() +
-          "/FATIH/is/20211231_PETRA/webseite/zoom%20einbetten/meeting.html?" +
+          "/https://hfsonmez.github.io/wixhtmlpages/meeting.html?" +
           testTool.serialize(meetingConfig);
         document.getElementById('copy_link_value').setAttribute('link', joinUrl);
         copyToClipboard('copy_link_value');
